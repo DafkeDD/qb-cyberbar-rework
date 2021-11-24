@@ -1,3 +1,12 @@
+all the files you need in the [add to server] file
+
+photo:
+![FiveM_GTAProcess_1kxECLWOMJ](https://user-images.githubusercontent.com/89742984/143266068-97d64f0b-f19f-4832-89b6-4492c3bc5563.png)
+![ShareX_eW3b8V9am5](https://user-images.githubusercontent.com/89742984/143266122-067cfd12-a0f4-43a1-9865-49ec667a228d.png)
+![FiveM_GTAProcess_pcXZzjvvLC](https://user-images.githubusercontent.com/89742984/143266160-1d521f70-634f-442b-95c3-2acd225d19e7.png)
+![FiveM_GTAProcess_XR1lZGVQ2a](https://user-images.githubusercontent.com/89742984/143266173-d8729c7a-fd02-4db7-b96b-11be4b0cedc5.png)
+
+
 the cyberbar form https://github.com/ArcadiaRoleplay/qb-cyberbar
 
 #qb-cyberbar-rework
@@ -226,7 +235,7 @@ end)
 ```
 ----------------
 new code]] my rework 
-
+```
 RegisterNetEvent("consumables:client:DrinkCock")
 AddEventHandler("consumables:client:DrinkCock", function(itemName)
     TriggerEvent('animations:client:EmoteCommandStart', {"drink"})
@@ -333,7 +342,10 @@ end)
 
 
 qb-smallresources/server/consumables.lua  -- Useable Items
+
 ```
+```
+
 -- // Cyber Bar Drinks
 QBCore.Functions.CreateUseableItem("dvrcocktail", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
@@ -446,7 +458,9 @@ QBCore.Functions.CreateUseableItem("rabbitfood", function(source, item)
     end
 end)
 ```
+```
 -- // Events for qb-target
+```
 ```
 RegisterNetEvent('cyberbar:menu')
 AddEventHandler('cyberbar:menu', function ()
