@@ -3,11 +3,6 @@ the cyberbar form https://github.com/ArcadiaRoleplay/qb-cyberbar
 #qb-cyberbar-rework
 # Cyber Bar
 
-
-for boss menu add this  
-    ['cyberbar'] = vector3(324.1, -927.43, 29.25)
-to qb-bossmenu/config.lua
-
 Job for qb-core/shared.lua
 ```
 	---------------------------------------------------------------------------------CYBERBAR
