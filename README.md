@@ -446,8 +446,8 @@ QBCore.Functions.CreateUseableItem("rabbitfood", function(source, item)
     end
 end)
 ```
-
 -- // Events for qb-target
+```
 RegisterNetEvent('cyberbar:menu')
 AddEventHandler('cyberbar:menu', function ()
     if isLoggedIn and QBCore ~= nil then
@@ -723,3 +723,4 @@ AddEventHandler("cyberbar:OpenInventory02", function()
 	})
 	TriggerEvent("inventory:client:SetCurrentStash", "cyberbartray02")
 end)
+```
