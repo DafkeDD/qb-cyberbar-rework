@@ -43,6 +43,12 @@ Job for qb-core/shared.lua
 		defaultDuty = true,
 	},
 ```
+for boss menu add this  
+```
+    ['cyberbar'] = vector3(324.1, -927.43, 29.25)
+```
+to qb-bossmenu/config.lua
+
 Items for qb-core/shared.lua
 ```
 	-- // Cyber Bar Drinks
