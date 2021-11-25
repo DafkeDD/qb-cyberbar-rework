@@ -29,8 +29,6 @@ local SpatelObject = nil
 -- // Events for qb-target
 RegisterNetEvent('cyberbar:menu')
 AddEventHandler('cyberbar:menu', function ()
-    if isLoggedIn and QBCore ~= nil then
-        if PlayerJob.name == Config.job then
             local myMenu = {
                 {
                     id = 1,
@@ -63,14 +61,10 @@ AddEventHandler('cyberbar:menu', function ()
                 },
             }
             exports['zf_context']:openMenu(myMenu)
-        end
-    end
 end)
 
 RegisterNetEvent('cyberbar:drink')
 AddEventHandler('cyberbar:drink', function ()
-    if isLoggedIn and QBCore ~= nil then
-        if PlayerJob.name == Config.job then
             local myMenu = {
                 {
                     id = 1,
@@ -190,15 +184,11 @@ AddEventHandler('cyberbar:drink', function ()
                 },
             }
             exports['zf_context']:openMenu(myMenu)
-        end
-    end
 end)
 
 
 RegisterNetEvent('cyberbar:food')
 AddEventHandler('cyberbar:food', function ()
-    if isLoggedIn and QBCore ~= nil then
-        if PlayerJob.name == Config.job then
             local myMenu = {
                 {
                     id = 1,
@@ -264,8 +254,6 @@ AddEventHandler('cyberbar:food', function ()
                 },
             }
             exports['zf_context']:openMenu(myMenu)
-        end
-    end
 end)
 
 ----------------------------------------------------
