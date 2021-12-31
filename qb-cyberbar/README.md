@@ -228,7 +228,7 @@ end)
 ```
 ----------------
 new code]] my rework 
-
+```
 RegisterNetEvent("consumables:client:DrinkCock")
 AddEventHandler("consumables:client:DrinkCock", function(itemName)
     TriggerEvent('animations:client:EmoteCommandStart', {"drink"})
@@ -254,7 +254,8 @@ AddEventHandler("consumables:client:DrinkCock", function(itemName)
         QBCore.Functions.Notify("Cancelled..", "error")
     end)
 end)
-
+```
+```
 RegisterNetEvent("consumables:client:DrinkBeer")
 AddEventHandler("consumables:client:DrinkBeer", function(itemName)
     TriggerEvent('animations:client:EmoteCommandStart', {"drink"})
@@ -280,8 +281,8 @@ AddEventHandler("consumables:client:DrinkBeer", function(itemName)
         QBCore.Functions.Notify("Cancelled..", "error")
     end)
 end)
-
-
+```
+```
 RegisterNetEvent("consumables:client:EatBurger")
 AddEventHandler("consumables:client:EatBurger", function(itemName)
     Citizen.Wait(1500)
@@ -298,7 +299,8 @@ AddEventHandler("consumables:client:EatBurger", function(itemName)
 		SetEntityHealth(PlayerPedId(), GetEntityHealth(PlayerPedId()) + 4)
     end)
 end)
-
+```
+```
 RegisterNetEvent("consumables:client:Eat")
 AddEventHandler("consumables:client:Eat", function(itemName)
     Citizen.Wait(1500)
@@ -315,7 +317,8 @@ AddEventHandler("consumables:client:Eat", function(itemName)
 		SetEntityHealth(PlayerPedId(), GetEntityHealth(PlayerPedId()) + 4)
     end)
 end)
-
+```
+```
 RegisterNetEvent("consumables:client:EatSandwich")
 AddEventHandler("consumables:client:EatSandwich", function(itemName)
     Citizen.Wait(1500)
@@ -332,9 +335,11 @@ AddEventHandler("consumables:client:EatSandwich", function(itemName)
 		SetEntityHealth(PlayerPedId(), GetEntityHealth(PlayerPedId()) + 4)
     end)
 end)
-
+```
+```
 
 qb-smallresources/server/consumables.lua  -- Useable Items
+```
 ```
 -- // Cyber Bar Drinks
 QBCore.Functions.CreateUseableItem("dvrcocktail", function(source, item)
@@ -448,7 +453,7 @@ QBCore.Functions.CreateUseableItem("rabbitfood", function(source, item)
     end
 end)
 ```
-
+```
 -- // Events for qb-target
 RegisterNetEvent('cyberbar:menu')
 AddEventHandler('cyberbar:menu', function ()
@@ -489,7 +494,8 @@ AddEventHandler('cyberbar:menu', function ()
         end
     end
 end)
-
+```
+```
 RegisterNetEvent('cyberbar:drink')
 AddEventHandler('cyberbar:drink', function ()
     if isLoggedIn and QBCore ~= nil then
@@ -616,8 +622,8 @@ AddEventHandler('cyberbar:drink', function ()
         end
     end
 end)
-
-
+```
+```
 RegisterNetEvent('cyberbar:food')
 AddEventHandler('cyberbar:food', function ()
     if isLoggedIn and QBCore ~= nil then
@@ -690,7 +696,8 @@ AddEventHandler('cyberbar:food', function ()
         end
     end
 end)
-
+```
+```
 ----------------------------------------------------
 -- job stash
 RegisterNetEvent("cyberbar:stash")
@@ -706,7 +713,8 @@ AddEventHandler("cyberbar:stash", function()
 	end
 end)
 
-
+```
+```
 ----------------------------------------------------
 RegisterNetEvent("cyberbar:OpenInventory")
 AddEventHandler("cyberbar:OpenInventory", function()
@@ -716,7 +724,8 @@ AddEventHandler("cyberbar:OpenInventory", function()
 	})
 	TriggerEvent("inventory:client:SetCurrentStash", "cyberbartray")
 end)
-
+```
+```
 RegisterNetEvent("cyberbar:OpenInventory02")
 AddEventHandler("cyberbar:OpenInventory02", function()
 	TriggerServerEvent("inventory:server:OpenInventory", "stash", "cyberbartray02", {
@@ -725,3 +734,4 @@ AddEventHandler("cyberbar:OpenInventory02", function()
 	})
 	TriggerEvent("inventory:client:SetCurrentStash", "cyberbartray02")
 end)
+```
